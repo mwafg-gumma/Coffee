@@ -11,25 +11,40 @@
     <header class="container">
         <!-- head -->
     <div class="head">
+        <nav>
         <h1 class="logo">
             BrewCraft <span>Coffee</span>
         </h1>
-        <nav class="navigation">
-            <ul>
+            <ul id="nav-list">
             <li> <a href="#About">About Coffee</a></li>
             <li> <a href="#menu">Menu</a></li>
-            <li> <a href="#review">Review</a></li>
+            <li> <a href="#review">Pages</a></li>
             <li> <a href="#Contact">How to use</a></li>
             <li> <a href="#Contact">Contact us</a></li>
             </ul>
-        </nav>
-        <div class="icon">
-            <div class="icon-bar">
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <!-- Page Link -->
+            <li class="dropdown">
+    <a href="#"> Pages <i class="fa fa-caret-down"></i></a>
+    <ul class="dropdown-list">
+        <li><a href="/data/Team.html">Team</a></li>
+        <li><a href="#team">Event</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#blog">Testimonials</a></li>
+        <li><a href="#faq">Gallery</a></li>
+        <li><a href="#faq">Careers</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>
+</li>
 
+            <!--  -->
+        <!-- Add this for the menu icon -->
+        <div class="icon">
+                <i class="fa-solid fa-user"></i>
             </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+            </nav>
                 </div>
     <!-- main -->
     <section class="main" id="main">
@@ -97,26 +112,25 @@
                 </h3>
             </div>
             <div class="des">
-                <div class="drink" id="Drink">
-                    <a href="#">
+                <div class="drink tab-item" id="tab-1 ">
+                    <button>
                         Drink
-                    </a>
+                    </button>
                 </div>
-                <div class="Food">
-                    <a href="#" id="Food">
+                <div class="Food tab-item" id="tab-2 ">
+                    <button  >
                         Food
-                    </a>
+                    </button>
                 </div>
-                <div class="drink">
-                    <a href="#" id=" Dessert"> 
+                <div class="Dessert tab-item" id="tab-3 ">
+                    <button  > 
                         Dessert
-                    </a>
+                    </button>
                 </div>
             </div>
             <!-- Drink Section -->
-            <article class="Drink-point" id="Drink-point">
+            <article class="Point show" id="Drink-Point">
                 <div class="container">
-                    <!-- 1 -->
                     <div class="box">
                         <img src="imags/Coffee-One.png" alt="Coffee Image">
                         <div class="details">
@@ -128,13 +142,13 @@
                             </p>
                         </div>
                         <div class="price">
-                            <h4>
-                                $3.00
-                            </h4>
+                                <p>
+                                    $3.00
+                                </p>
                         </div>
                         
                     </div>
-                    <!-- 2 -->
+                    
                     <div class="box">
                         <img src="imags/Coffe-Twelve.jpg" alt="Coffee Image">
                         <div class="details">
@@ -142,185 +156,587 @@
                                 Espresso
                             </h3>
                             <p class="lead">
-                                Rich, bold, and concentrated shot of pure coffee flavor.
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
                             </p>
                         </div>
                         <div class="price">
-                            $3.00
+                            <p>
+                                $3.00
+                            </p>
                         </div>
                         
                     </div>
-                    <!-- 3 -->
-                         <div class="box">
+                    
+                        <div class="box">
                         <img src="imags/Coffee-Three.png" alt="Coffee Image">
                         <div class="details">
                             <h3>
                                 Espresso
                             </h3>
                             <p class="lead">
-                                Rich, bold, and concentrated shot of pure coffee flavor.
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
                             </p>
                         </div>
                         <div class="price">
-                            $3.00
+                            <p>
+                                $3.00
+                            </p>
                         </div>
                         
                     </div>
-                    <!-- 4 -->
-                          <div class="box">
+                    
+                        <div class="box">
                         <img src="imags/Coffee-Five.jpg" alt="Coffee Image">
                         <div class="details">
                             <h3>
                                 Espresso
                             </h3>
                             <p class="lead">
-                                Rich, bold, and concentrated shot of pure coffee flavor.
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
                             </p>
                         </div>
                         <div class="price">
-                            $3.00
+                            <p>
+                                $3.00
+                            </p>
                         </div>
                         
                     </div>
-                    <!-- 5 -->
-                          <div class="box">
+                    
+                        <div class="box">
                         <img src="imags/Coffee-Four.jpg" alt="Coffee Image">
                         <div class="details">
                             <h3>
                                 Espresso
                             </h3>
                             <p class="lead">
-                                Rich, bold, and concentrated shot of pure coffee flavor.
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
                             </p>
                         </div>
                         <div class="price">
-                            $3.00
+                            <p>
+                                $3.00
+                            </p>
                         </div>
                         
                     </div>
-                    <!-- 6 -->
-                          <div class="box">
+                    
+                        <div class="box">
                         <img src="imags/Coffee-Six.jpg" alt="Coffee Image">
                         <div class="details">
                             <h3>
                                 Espresso
                             </h3>
                             <p class="lead">
-                                Rich, bold, and concentrated shot of pure coffee flavor.
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
                             </p>
                         </div>
                         <div class="price">
-                            $3.00
+                            <p>
+                                $3.00
+                            </p>
                         </div>
                         
                     </div>
-                    <!-- 7 -->
-                          <div class="box">
+                    
+                        <div class="box">
                         <img src="imags/Coffee-Seven.jpg" alt="Coffee Image">
                         <div class="details">
                             <h3>
                                 Espresso
                             </h3>
                             <p class="lead">
-                                Rich, bold, and concentrated shot of pure coffee flavor.
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
                             </p>
                         </div>
                         <div class="price">
-                            $3.00
+                            <p>
+                                $3.00
+                            </p>
                         </div>
                         
                     </div>
-                    <!-- 8 -->
-                          <div class="box">
+                    
+                        <div class="box">
                         <img src="imags/Coffee-nine.png" alt="Coffee Image">
                         <div class="details">
                             <h3>
                                 Espresso
                             </h3>
                             <p class="lead">
-                                Rich, bold, and concentrated shot of pure coffee flavor.
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
                             </p>
                         </div>
                         <div class="price">
-                            $3.00
+                            <p >
+                                $3.00
+                            </p>
                         </div>
                         
                     </div>
-                     <!--  -->
+                    
+                </div>
+            </article> 
+
+            <!-- Food Section -->
+            <article class="Point" id="Food-Point">
+                    <div class="container">
+                    <div class="box">
+                        <img src="imags/Food-one.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                                <p>
+                                    $4.00
+                                </p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="box">
+                        <img src="imags/Food-two.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Food-three.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Food-four.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Food-five.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Food-six.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/for.jpg" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Coffee-nine.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
                 </div>
             </article>
-            <!-- Food Section -->
+            
             <!-- Dessert Section -->
+            
+            <article class="Point" id="Dessert-Point">
+                    <div class="container">
+                    <div class="box">
+                        <img src="imags/Sweet-one.jpg" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                                <p>
+                                    $4.00
+                                </p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="box">
+                        <img src="imags/Sweet-two.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Sweet-three.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Sweet-four.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Sweet-five.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Sweet-six.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Sweet-seven.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="box">
+                        <img src="imags/Sweet-two.png" alt="Coffee Image">
+                        <div class="details">
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p class="lead">
+                                Rich, bold, and concentrated <br> shot of pure coffee flavor.
+                            </p>
+                        </div>
+                        <div class="price">
+                            <p>
+                                $4.00
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
 
-
+            <!--  -->
         </section>
 
-<!-- Review -->
-<h1 class="center">CUSTOMER'S <span>REVIEW</span></h1>
- <section class="review-par" id="review">
-<div class="review">
-    <h1><i class="fa-brands fa-react"></i></h1>
-<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore, in voluptates delectus esse
-    nesciunt odio non deleniti dolorem molestiae ipsam cumque, recusandae reiciendis aliquam repellendus
-</h2>
-<img src="imags/lixu3.jpg" alt="">
-<p>Join Dive</p>
-</div>
-<div class="review">
-    <h1><i class="fa-brands fa-react"></i></h1>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore, in voluptates delectus esse
-    nesciunt odio non deleniti dolorem molestiae ipsam cumque, recusandae reiciendis aliquam repellendus
-    
-    </h2>
-    <img src="imags/lixu (2).jpg" alt="">
-    <p>Join Dive</p>
-    </div>
-    <div class="review">
-    <h1><i class="fa-brands fa-react"></i></h1>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore, in voluptates delectus esse
-        nesciunt odio non deleniti dolorem molestiae ipsam cumque, recusandae reiciendis aliquam repellendus
-    </h2>
-    <img src="imags/pexels-picturesbyamusan-5046105.jpg" alt="">
-    <p>Join Dive</p>
-    </div>
- </section>
-
- <!-- contact -->
-
- <section class="Contact" id="Contact">
-    <h1 class="center">Contact <span>US</span></h1>
-    <div class="contact-par">
-    <div class="getin">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15751539.706479872!2d19.55396842172113!3d15.452624317543293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15d91cc41072b195%3A0xd2bf70462a612b37!2sSudan!5e0!3m2!1sen!2sin!4v1736019478605!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <form action="#" class="tage">
-        <div class="input-icon">
-        <input type="text" class="user" placeholder="Full Name">
-        <input type="text" class="Email" placeholder="Your Email">
-        <input type="text" class="number" placeholder="Number">
+<!-- Form -->
+    <section class="Review">
+    <div class="container">
+        <!-- image -->
+            <div class="images">
+                <img src="./imags/two.jpg" alt="Image">
+            </div>
+        <!-- Form -->
+            <div class="form">
+            <div class="title">
+                <h1>Reservation</h1>
+                <h3>Reserve Your Table</h3>
+            </div>
+            <!-- input & form  -->
+                <form class="form-input">     
+                    <div class="input-name">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-Email-Phone">
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone" required>
+                    </div>
+                    <div class="input-people-Date">
+                        <input type="number" placeholder="Number of People" required>
+                        <input type="date" placeholder="Select Date" required>
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Your Message"></textarea>
+                    </div>
+                    <!-- button -->
+                    <div class="btn-book">
+                        <button type="submit">Book A Table</button>
+                        </div>
+                </form>
         </div>
-        <button>Contact Now</button>
-    </form>
+        <!-- Text-Info -->
+        <div class="text">
+            <div class="up">
+                <h1>
+                Opening hours
+            </h1>
+            <p>
+                Monday to Saturday: 18:00 – 23:00 <br>
+                Aperitive Monday to Saturday: 16:00 – 18:00
+            </p>
+            <a href="">
+                *Terrace, Closed in The Rain
+            </a>
+            </div>
+            <div class="border"></div>
+            <div class="down">
+                <h1>
+                    Get in touch
+                </h1>
+                <h3>
+                    A : Building W 13th Parks Suite 559, Denver
+                </h3>
+                <h4>
+                    p : +249 121 896 328
+                </h4>
+                <h5>
+                    E : Mwafggommaabdul@gmail.com
+                </h5>
+            </div>
+        </div>
     </div>
- </section>
- <!-- footer -->
+</section>
+<!-- footer -->
 
- <footer class="footer">
-    <div class="footer-content">
-    <h3>Coffee Shop</h3>
-    <p>Enjoy the best coffee in town with us. Follow us on social media for updates and promotions.</p>
-    <ul class="socials">
-        <li><a href="https://facebook.com/MűăfăqĞømãã"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="https://instagram.com/mwafg_gomma"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://youtube.com/Mwafggumma"><i class="fa-brands fa-youtube"></i></a></li>
-    </ul>
+<div class="footer">
+    <div class="container">
+        <!-- Contact Info -->
+        <div class="contact-Info contact">
+            <div class="logo">
+                <h1>
+                    Contact Info
+                </h1>
+            </div>
+            <div class="info">
+                <h2>
+                    A : Callison Laney Buoy Building W
+                </h2>
+                <a  href="#">
+                    13th Parks Suite 559, Denver
+                </a>
+                <h3>
+                    p : +249 121 896 328
+                </h3>
+                <h4>
+                    E : Mwafggommaabdul@gmail.com
+                </h4>
+                <h5>
+                    team@support.com
+                </h5>
+            </div>
+        </div>
+        <!-- Contact Website -->
+        <div class="contact-web contact">
+            <div class="logo">
+                <h1>
+                    BrewCraft Coffee
+                </h1>
+            </div>
+            <div class="info">
+                <h2>
+                    From carefully selected beans to <br>
+                    handcrafted drinks, we serve coffee <br> made with heart
+                </h2>
+                <h3>
+                    Monday to Saturday: 18:00 – 23:00
+                </h3>
+                <a href="#">
+                    Sunday:1800 - 24:00
+                </a>
+            </div>
+        </div>
+        <!-- Our Newsletter -->
+        <div class="contact-Newsletter contact">
+            <div class="logo">
+                <h1>
+                    Newsletter
+                </h1>
+            </div>
+            <div class="info">
+                <h2>
+                    Subscribe to our newsletter
+                </h2>
+            </div>
+            <div class="btn-subscribe">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+
     </div>
-    <div class="footer-bottom">
-    <p>&copy; 2023 Coffee Shop. All rights reserved.</p>
+
+    
+        <!-- icon & Reserved -->
+        <div class="icon-reserved">
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+            <div class="reserved">
+                <p>
+                    &copy; 2024 BrewCraft Coffee. All rights reserved by Mwafggommaabdul &copy; 2025
+                </p>
+            </div>
     </div>
-</footer>
+    
 
 
-<script src="main.js"></script>
+
+
+<script src="/src/main.js"></script>
 </body>
 </html>
