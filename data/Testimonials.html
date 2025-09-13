@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- font link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Events Page</title>
+    <style>
+        .container-fluid {
+        background-color: #99582a !important;
+        color: #fff !important;
+        padding: 20px 0;
+    }
+    .navbar-brand {
+        color: #ff701e;
+    }
+    .navbar-brand span {
+        color: #fbf8f8;
+        font-size: 25px;
+    }
+    .btn-b {
+        border: 1px solid #ecb652;
+        border-radius: 20px;
+        font-size: 18px ;
+        padding: 5px 15px;
+        background-color: #99582a12;
+        color: #fff;
+    }
+    .btn-b:hover{
+        background-color: #ce661b;
+    }
+    .main {
+        background-color:#99582a ;
+
+    }
+    .main h1{
+        color: #dcc58c;
+        font-weight: 500;
+    }
+    .main a {
+        text-decoration: none;
+    }
+    .main a:hover{
+        color: #99582a;
+    }
+    .main i {
+        color: #cc950c;
+    }
+    .main div h1 {
+        font-size: 4rem ;
+    }
+    .team{
+        background-color: #f2e8cf9a;
+    }
+    .team h4{
+        color: #be9c46b9;
+    }
+    .team h1 {
+        color: #6f5a13be;
+    }
+    .title h1 {
+        font-size: 18px;
+        padding: 10px 0;
+        color: #959798e6;
+    }
+    .title h3 {
+        color: #49111c;
+        font-size: 4em;
+        font-style: oblique;
+    }
+    .grid .img-1 img{
+        width: 433px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .grid .img-2 img{
+        width: 430px;
+        height: 330px;
+        object-fit: cover;
+    }
+    .grid .img-3 img{
+        width: 440px;
+        height: 500px;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+    .grid .img-4 img{
+        width: 434px;
+        height: 350px;
+        object-fit: cover;
+    }
+    .grid .img-5 img{
+        width: 430px;
+        height: 430px;
+        margin-top: -41%;
+        object-fit: cover;
+    }
+    .grid .img-6 img{
+        width: 441px;
+        height: 350px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    .grid .img-7 img{
+        width: 435px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .grid .img-8 img{
+        width: 430px;
+        height: 395px;
+        margin-top: -23%;
+        object-fit: cover;
+    }
+    .grid .img-9 img{
+        width: 443px;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    .comment img{
+        width: 500px;
+        height: 600px;
+        object-fit: cover;
+        border-top-left-radius: 48%;
+        border-top-right-radius: 48%;
+    }
+    .comment div {
+        margin: 10px 20px;
+    }
+    .comment div h2{
+        color: #e2cd66;
+        margin: 10px 0;
+        font-size: 3rem;
+    }
+    .comment div p{
+        margin: 30px 0 ;
+        font-size: 2rem;
+        color: #721a2c;
+    }
+    .Community{
+        background-color: #f0dbb34b;
+    }
+    .popular img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .popular h1 {
+        font-size: 20px;
+        margin: 10px ;
+        color: #540a19b5;
+    }
+    .popular span {
+        margin: 0 10px;
+        color: #585754a4;
+    }
+    .popular-comment {
+        margin: 5px 0;
+    }
+    .popular-comment .Customers {
+        width: 750px;
+        border: 1px solid #dcc58c;
+        padding: 20px;
+    }
+    .popular-comment .Customers img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .popular-comment .Customers p {
+        color: #721a2cc9;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+    .Customers h1{
+        color:#540a19b5;
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: -180%;
+    }
+    .Customers span{
+        color: #585754a4;
+        margin-left: -200%;
+    }
+    .Customers i {
+        color: #e2cd66;
+        font-size: 3rem;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid border-bottom">
+    <div class="d-flex justify-content-between align-items-center mx-1">
+        <!-- Logo on the left -->
+        <h1 class="navbar-brand mb-0 fs-3 px-3 logo">
+            BrewCraft <span> Coffee</span>
+        </h1>
+        <!-- Links in the center -->
+        <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+            <ul class="navbar-nav flex-row gap-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Event</a></li>
+                        <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                        <li><a class="dropdown-item" href="#">Careers</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Button on the right -->
+        <button type="button" class="btn-b">Reservation</button>
+        <!-- Mobile toggler -->
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <!-- Mobile links -->
+    <div class="collapse navbar-collapse d-lg-none" id="navbarNavDropdown">
+        <ul class="navbar-nav text-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Event</a></li>
+                    <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                    <li><a class="dropdown-item" href="#">Careers</a></li>
+                    <li><a class="dropdown-item" href="#">FAQ</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- main section -->
+
+    <section class="main text-center py-5">
+    <div class="pt-5 mx-2 ">
+        <h1 class="font-bold ">
+            Testimonials
+        </h1>
+        <!-- link -->
+        <div class=" d-flex flex-row justify-content-center mx-2 align-items-center py-5 ">
+            <a href="/index.html" class="text-white fs- fs-4 ">Home</a>
+            <i class="fa-solid fa-arrow-right  mt-2 mx-2"></i>
+            <a href="" class="text-white fs-4">Events</a>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- Community Section -->
+
+    <section class=" py-5 Community">
+        <div class="py-3">
+                <div class="title text-center">
+                <h1>
+                    Testimonials
+                </h1>
+                <h3>
+                    Voices from Our Guests
+                </h3>
+            </div>
+            <!-- Comment Customer -->
+            <div class="d-flex flex-row algin-items-center gap-2 comment m-5">
+                <!-- img -->
+                <img src="../data-Image/Guests-C.jpg" alt="Guests-Img">
+                <div class=" mx-5 ">
+                        <h2>
+                            <i class="fas fa-quote-left"></i>
+                        </h2>
+                        <p>
+                            “This café has truly become my happy place. <br> The coffee is always rich, smooth, and brewed <br> to perfection, and the aroma alone is enough <br> to brighten my day."
+                        </p>
+                        <div class="border my-3"></div>
+                        <div class="my-2 popular">
+                            <img src="../data-Image/Guests-A.jpg" alt="">
+                                <h1>
+                                Miriam Marrow
+                            </h1>
+                            <span>
+                                Customers
+                            </span>
+                            
+                        </div>
+                </div>
+            </div>
+            <!-- Popular Comment  -->
+                <div class="popular-comment mt-5 text-center">
+                    <div class="container d-flex flex-row align-items-center gap-3">
+                        <!-- 1 -->
+                        <div class="Customers mx-2">
+                            <p>
+                                “This café feels like a hidden gem. The pastries are freshly <br> baked, the coffee is outstanding, and the  service is  always  <br> genuine. I’ve introduced so many friends to this place."
+                            </p>
+                            <div class="border my-3"></div>
+                            <div class="d-flex flex-row align-items-center justify-content-between">
+                                <img src="../data-Image/Guests-B.jpg" alt="">
+                                <div>
+                                    <h1>
+                                    Miriam Marrow
+                                </h1>
+                                <span>
+                                    Customers
+                                </span>
+                                </div>
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="Customers mx-2">
+                            <p>
+                                “This café feels like a hidden gem. The pastries are freshly <br> baked, the coffee is outstanding, and the  service is  always  <br> genuine. I’ve introduced so many friends to this place."
+                            </p>
+                            <div class="border my-3"></div>
+                            <div class="d-flex flex-row align-items-center justify-content-between">
+                                <img src="../data-Image/Guests-B.jpg" alt="">
+                                <div>
+                                    <h1>
+                                    Miriam Marrow
+                                </h1>
+                                <span>
+                                    Customers
+                                </span>
+                                </div>
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
