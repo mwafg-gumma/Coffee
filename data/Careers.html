@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- font link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Events Page</title>
+    <style>
+        .container-fluid {
+        background-color: #99582a !important;
+        color: #fff !important;
+        padding: 20px 0;
+    }
+    .navbar-brand {
+        color: #ff701e;
+    }
+    .navbar-brand span {
+        color: #fbf8f8;
+        font-size: 25px;
+    }
+    .btn-b {
+        border: 1px solid #ecb652;
+        border-radius: 20px;
+        font-size: 18px ;
+        padding: 5px 15px;
+        background-color: #99582a12;
+        color: #fff;
+    }
+    .btn-b:hover{
+        background-color: #ecb652;
+    }
+    .main {
+        background-color:#99582a ;
+    }
+    .main h1{
+        color: #dcc58c;
+        font-weight: 500;
+    }
+    .main a {
+        text-decoration: none;
+    }
+    .main a:hover{
+        color: #99582a;
+    }
+    .main i {
+        color: #cc950c;
+    }
+    .main div h1 {
+        font-size: 4rem ;
+    }
+    .aside{
+        background-color: #f2e8cf9a;
+        padding: 8% 0;
+    }
+    .aside div h1{
+        color: #8f8a8ac2;
+        font-size: 15px;
+    }
+    .aside div h2{
+        font-size: 3rem;
+        color: #721a2c;
+    }
+    .aside .btn {
+        border: none;
+        border-radius: 20px;
+        background-color: #530f1c;
+        margin: 30px;
+        padding: 5px 23px;
+        color: #fff;
+        
+    }
+    .aside .card {
+        background-color: #f4efe29a;
+    }
+    .aside .card:hover{
+        background-color: #f3ebd79a;
+    }
+    .aside a{
+        text-decoration: none;
+        color: #530f1c;
+        border-radius: 20px;
+        padding: 7px 20px;
+        border: 1px solid #dcc58c;
+        margin: 0 5px;
+    }
+    .aside a:hover{
+        background-color: #ecb652;
+    }
+    @media(max-width:769px) {
+        .btn-b {
+            margin-left: -7%;
+    }
+        .main div h1 {
+        font-size: 3rem ;
+    }
+        .aside div h1{
+        text-align: center;
+    }
+    .aside div h2{
+        font-size: 1.5rem;
+    }
+    .aside .btn {
+        margin: 15px 10px;
+        
+    }
+    .aside .card{
+        background-color: #f3ebd79a;
+    }
+    .aside a{
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: -95%;
+    }
+    .aside .card span{
+        display: inline-block;
+    }
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid border-bottom">
+    <div class="d-flex justify-content-between align-items-center mx-1">
+        <!-- Logo on the left -->
+        <h1 class="navbar-brand mb-0 fs-3 px-3 logo">
+            BrewCraft <span> Coffee</span>
+        </h1>
+        <!-- Links in the center -->
+        <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+            <ul class="navbar-nav flex-row gap-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Event.html">Event</a></li>
+                        <li><a class="dropdown-item" href="./Testimonials.html">Testimonials</a></li>
+                        <li><a class="dropdown-item" href="./Gallery.html">Gallery</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Careers</a></li> -->
+                        <li><a class="dropdown-item" href="./FAQ.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Button on the right -->
+        <button type="button" class="btn-b">Reservation</button>
+        <!-- Mobile toggler -->
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <!-- Mobile links -->
+    <div class="collapse navbar-collapse d-lg-none" id="navbarNavDropdown">
+        <ul class="navbar-nav text-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Event</a></li>
+                    <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                    <li><a class="dropdown-item" href="#">Careers</a></li>
+                    <li><a class="dropdown-item" href="#">FAQ</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- main section -->
+
+    <section class="main text-center py-5">
+    <div class="pt-5 mx-2 ">
+        <h1 class="font-bold ">
+            Careers
+        </h1>
+        <!-- link -->
+        <div class=" link d-flex flex-row justify-content-center mx-2 align-items-center py-5 ">
+            <a href="/index.html" class="text-white fs- fs-4 ">Home</a>
+            <i class="fa-solid fa-arrow-right  mt-2 mx-2"></i>
+            <a href="" class="text-white fs-4">Careers</a>
+        </div>
+        
+    </div>
+</section>
+
+<!-- aside -->
+
+    <aside class="aside">
+        <div class="container text-center">
+            <!-- title -->
+            <div class="mx-2">
+                <h1>
+                    Open Position
+                </h1>
+                <h2>
+                    Exciting Opportunities Await
+                </h2>
+            </div>
+        </div>
+        <!-- box section -->
+            <div class="mt-4 ">
+                <!-- box 1 -->
+                    <div class="card my-3 m:mx-3 mx-2 ">
+                    <div class="d-flex flex-row align-items-center justify-content-between m:mb-2 mb-3 ">
+                        <!-- button -->
+                            <button class="btn">
+                                Barista
+                            </button>
+                            <!-- text -->
+                            <div class="d-flex flex-row  align-items-center mx-2">
+                                <p class="text-secondary m-3">
+                                    Full-Time
+                                </p>
+                                <li class="text-secondary mx-3">
+                                    $25k - 30k per year
+                                </li>
+                            </div>
+                    </div>
+                    <div class="border mx-4"></div>
+                        <div class="d-flex flex-lg-row flex-column align-items-center justify-content-between ">
+                        <!-- Info -->
+                            <div class="align-items-center mb-2">
+                                <p class="m:mx-5 mx-3 my-3 fs-5">
+                                    Barista
+                                </p>
+                                <span class="fs-6 text-secondary m:mx-5 mx-3   ">
+                                    Prepares coffee, tea, and specialty drinks while providing friendly customer service.
+                                </span>
+                            </div>
+                            <!-- text -->
+                            <div class="m:space-x-3 mb-3">
+                                <a href="">
+                                    Apply Now
+                                </a>
+                            </div>
+                    </div>
+                    </div>
+                <!-- box 2 -->
+                        <div class="card my-3 m:mx-3 mx-2 ">
+                    <div class="d-flex flex-row align-items-center justify-content-between m:mb-2 mb-3 ">
+                        <!-- button -->
+                            <button class="btn">
+                                Barista
+                            </button>
+                            <!-- text -->
+                            <div class="d-flex flex-row  align-items-center mx-2">
+                                <p class="text-secondary m-3">
+                                    Full-Time
+                                </p>
+                                <li class="text-secondary mx-3">
+                                    $25k - 30k per year
+                                </li>
+                            </div>
+                    </div>
+                    <div class="border mx-4"></div>
+                        <div class="d-flex flex-lg-row flex-column align-items-center justify-content-between ">
+                        <!-- Info -->
+                            <div class="align-items-center mb-2">
+                                <p class="m:mx-5 mx-3 my-3 fs-5">
+                                    Barista
+                                </p>
+                                <span class="fs-6 text-secondary m:mx-5 mx-3   ">
+                                    Prepares coffee, tea, and specialty drinks while providing friendly customer service.
+                                </span>
+                            </div>
+                            <!-- text -->
+                            <div class="m:space-x-3 mb-3">
+                                <a href="">
+                                    Apply Now
+                                </a>
+                            </div>
+                    </div>
+                    </div>
+                <!-- box 3 -->
+                        <div class="card my-3 m:mx-3 mx-2 ">
+                    <div class="d-flex flex-row align-items-center justify-content-between m:mb-2 mb-3 ">
+                        <!-- button -->
+                            <button class="btn">
+                                Barista
+                            </button>
+                            <!-- text -->
+                            <div class="d-flex flex-row  align-items-center mx-2">
+                                <p class="text-secondary m-3">
+                                    Full-Time
+                                </p>
+                                <li class="text-secondary mx-3">
+                                    $25k - 30k per year
+                                </li>
+                            </div>
+                    </div>
+                    <div class="border mx-4"></div>
+                        <div class="d-flex flex-lg-row flex-column align-items-center justify-content-between ">
+                        <!-- Info -->
+                            <div class="align-items-center mb-2">
+                                <p class="m:mx-5 mx-3 my-3 fs-5">
+                                    Barista
+                                </p>
+                                <span class="fs-6 text-secondary m:mx-5 mx-3   ">
+                                    Prepares coffee, tea, and specialty drinks while providing friendly customer service.
+                                </span>
+                            </div>
+                            <!-- text -->
+                            <div class="m:space-x-3 mb-3">
+                                <a href="">
+                                    Apply Now
+                                </a>
+                            </div>
+                    </div>
+                    </div>
+                <!-- box 4 -->
+                        <div class="card my-3 m:mx-3 mx-2 ">
+                    <div class="d-flex flex-row align-items-center justify-content-between m:mb-2 mb-3 ">
+                        <!-- button -->
+                            <button class="btn">
+                                Barista
+                            </button>
+                            <!-- text -->
+                            <div class="d-flex flex-row  align-items-center mx-2">
+                                <p class="text-secondary m-3">
+                                    Full-Time
+                                </p>
+                                <li class="text-secondary mx-3">
+                                    $25k - 30k per year
+                                </li>
+                            </div>
+                    </div>
+                    <div class="border mx-4"></div>
+                        <div class="d-flex flex-lg-row flex-column align-items-center justify-content-between ">
+                        <!-- Info -->
+                            <div class="align-items-center mb-2">
+                                <p class="m:mx-5 mx-3 my-3 fs-5">
+                                    Barista
+                                </p>
+                                <span class="fs-6 text-secondary m:mx-5 mx-3   ">
+                                    Prepares coffee, tea, and specialty drinks while providing friendly customer service.
+                                </span>
+                            </div>
+                            <!-- text -->
+                            <div class="m:space-x-3 mb-3">
+                                <a href="">
+                                    Apply Now
+                                </a>
+                            </div>
+                    </div>
+                    </div>
+                <!-- box 4 -->
+            </div>
+    </aside>
+
+
+
+
+
+
+
+
+
+    <!-- Javascript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
